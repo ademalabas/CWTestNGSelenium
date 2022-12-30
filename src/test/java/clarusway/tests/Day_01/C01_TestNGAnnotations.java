@@ -28,6 +28,7 @@ public class C01_TestNGAnnotations {
         System.out.println("Before suite calisti");
     }
 
+
     @AfterSuite
     public void afterSuite(){
 
