@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Groups Test Suite">
+<suite name="Include Exclude Groups Test Suite">
 
     <groups>
         <run>
@@ -10,7 +10,7 @@
     </groups>
     
     
-    <test name="Groups Test">
+    <test name="Include Exclude Groups Test 01">
 
         
 
