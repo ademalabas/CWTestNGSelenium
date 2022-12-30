@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test name="Running single class">
+<suite name="Test Suite">
+    <test name="Test 01">
         <classes>
-            <class name="clarusway.tests.Day01_C05_TimeOut"></class>
+            <class name="clarusway.tests.Day_01.C03_DependsOn"></class>
+            <class name="clarusway.tests.Day_01.C04_Enabled"></class>
         </classes>
-
     </test>
 
+    <test name="Test 02">
+        <classes>
+            <class name="clarusway.tests.Day_01.C02_Priority"></class>
+        </classes>
+    </test>
 </suite>

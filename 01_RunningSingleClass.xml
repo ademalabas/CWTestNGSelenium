@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="Running single class">
         <classes>
-            <class name="clarusway.tests.Day01_C05_TimeOut"></class>
+            <class name="clarusway.tests.C05_TimeOut"></class>
         </classes>
 
     </test>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Groups Test Suite">
+
+    <groups>
+        <run>
+            <exclude name="regression"></exclude>
+            <include name="smoke"></include>
+        </run>
+    </groups>
+    
+    
+    <test name="Groups Test">
+
+        
+
+        <classes>
+            <class name="clarusway.tests.Day_02.C01_TestNGXML_Groups"></class>
+        </classes>
+
+
+
+    </test>
+
+</suite>
