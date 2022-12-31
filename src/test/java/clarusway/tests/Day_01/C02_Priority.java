@@ -19,7 +19,7 @@ public class C02_Priority {
 
     }
 
-    @Test(priority = -1500)
+    @Test
     public void test01(){
 
     }

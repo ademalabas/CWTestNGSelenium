@@ -1,5 +1,6 @@
 package clarusway.tests.Day_01;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class C03_DependsOn {
@@ -18,6 +19,7 @@ public class C03_DependsOn {
     @Test
     public void registrationTest(){
         System.out.println("Kayit testi yapiliyor");
+       // Assert.fail();
     }
 
 
