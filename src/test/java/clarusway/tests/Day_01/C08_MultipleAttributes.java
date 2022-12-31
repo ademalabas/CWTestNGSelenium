@@ -9,9 +9,10 @@ public class C08_MultipleAttributes {
             description = "This is a test case",
             priority = 10,
             groups = {"regression"},
-            enabled = false
-    )
+            enabled = false)
     public void test(){
+
+
     }
 
 
