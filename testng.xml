@@ -1,2 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/hi/IdeaProjects/CWTestNGSelenium"><classes><class name="clarusway.tests.Day_01.C01_TestNGAnnotations"><methods><include name="test01"/><include name="test02"/></methods></class><class name="clarusway.tests.Day_01.C02_Priority"><methods><include name="test02"/><include name="test04"/><include name="test01"/><include name="test03"/></methods></class><class name="clarusway.tests.Day_01.C03_DependsOn"><methods><include name="loginTest"/><include name="registrationTest"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/hi/IdeaProjects/CWTestNGSelenium">
+        <classes>
+            <class name="clarusway.tests.Day_01.C01_TestNGAnnotations">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_01.C02_Priority">
+                <methods>
+                    <include name="test02"/>
+                    <include name="test04"/>
+                    <include name="test01"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_01.C03_DependsOn">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="registrationTest"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_01.C04_Enabled">
+                <methods>
+                    <include name="enabledTest"/>
+                    <include name="disabledTest"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_01.C05_TimeOut">
+                <methods>
+                    <include name="passedTest"/>
+                    <include name="timedOutTest"/>
+                    <include name="timedOutTest2"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_01.C06_Description">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="homePageTest"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_01.C09_AssertionTypes">
+                <methods>
+                    <include name="hardAssertion"/>
+                    <include name="softAssertion"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_02.C02_Parameters">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_02.C03_ParametersExamples">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+            <class name="clarusway.tests.Day_02.C04_TestNGParametersSelenium">
+                <methods>
+                    <include name="parametersTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
