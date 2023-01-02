@@ -31,7 +31,7 @@ public class BaseCROSSBrowserTest {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
-            case "safari":
+           case "safari":
                 WebDriverManager.safaridriver().setup();
                 driver = new SafariDriver();
                 break;
