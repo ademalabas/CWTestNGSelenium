@@ -2,21 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Browser Parameters Suite">
 
-
     <test name="Browser Parameters Tests">
         <parameter name="browser" value="chrome"></parameter>
 
-
         <classes>
-
-
 
             <class name="clarusway.tests.Day_02.C03_ParametersExamples"></class>
 
-
-
         </classes>
-
 
     </test>
 

@@ -27,7 +27,6 @@ WebDriver driver;
     public void setup(String browserValue){
 
         switch (browserValue){
-
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
@@ -37,12 +36,10 @@ WebDriver driver;
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
-
         }
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
 
     }
 

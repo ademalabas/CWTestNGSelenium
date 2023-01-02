@@ -8,24 +8,17 @@
         <parameter name="aranacakKelime" value="Java"></parameter>
 
         <classes>
-
             <class name="clarusway.tests.Day_02.C04_TestNGParametersSelenium"></class>
-
         </classes>
 
-
     </test>
-
 
    <test name="Browser Parameters Tests 02">
     <parameter name="browser" value="firefox"></parameter>
     <parameter name="aranacakKelime" value="Selenium"></parameter>
 
-
     <classes>
-
         <class name="clarusway.tests.Day_02.C04_TestNGParametersSelenium"></class>
-
 
     </classes>
     </test>

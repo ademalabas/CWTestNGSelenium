@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class C02_Parameters {
 
     @Test
-    @Parameters("name")
+    @Parameters({"name"})
     public void test01(String name) {
 
         System.out.println("Hello  "+name);

@@ -12,13 +12,16 @@ public class C03_ParametersExamples {
     @BeforeMethod
     @Parameters("browser")
     public void setup(String browserName) {
-        //driver comfig yapiliyor
+        // Driver konfigurasyonlari yapiliyor
         if (browserName.equals("chrome")){
             driver = "chrome";
-        }else if (browserName.equals("firefox")){
+            // chrome konf yapildi
+        } else if (browserName.equals("firefox")) {
             driver = "firefox";
-        }else if (browserName.equals("opera")){
+            //firefox konf yapildi
+        } else if (browserName.equals("opera")) {
             driver = "opera";
+            // opera conf yapildi
         }
         System.out.println("driver objesi olusturuldu = " + driver);
 
@@ -27,12 +30,16 @@ public class C03_ParametersExamples {
 
     @AfterMethod
     public void tearDown() {
-        //driver comfig yapiliyor
+        driver ="-";
         System.out.println("driver sonlandirildi  = " + driver);
+        //driver KAPATILIYOR
     }
     @Test
     public void test() {
-        driver = "day";
+
+        System.out.println("Test execution basladi");
+        System.out.println("Testte kullanilan driver = " + driver);
+        // testimiz gerceklesiyor
     }
 
 

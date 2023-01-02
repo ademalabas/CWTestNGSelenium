@@ -2,17 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Running Packages Suite">
 
-    
-    
-    
     <test name="Runnig Packages Tests">
 
         <packages>
-
             <package name="clarusway.tests.Day_01"></package>
         </packages>
-
-
 
 
     </test>
