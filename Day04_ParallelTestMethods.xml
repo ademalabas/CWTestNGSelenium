@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel Test Suite" parallel="methods" >
 
-    <test name="Parallel Tests 01" >
+    <test name="Parallel Tests 01" parallel="classes" >
 
         <classes>
             <class name="clarusway.tests.Day_01.C09_AssertionTypes"></class>
@@ -12,7 +12,8 @@
 
     </test>
 
-    <test name="Parallel Tests 02" >
+
+    <test name="Parallel Tests 02" parallel="methods" >
 
         <classes>
             <class name="clarusway.tests.Day_01.C09_AssertionTypes"></class>
