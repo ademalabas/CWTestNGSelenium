@@ -9,8 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -79,7 +81,16 @@ public class BaseTestReport {
     }
 
     @AfterMethod
-    public void teardown(){
+    public void teardown(ITestResult result) throws IOException {
+       if (result.getStatus() ==ITestResult.FAILURE){
+          String screenshotLocation = ReusableMethods.getScreenShot(driver,result.getName());
+      extentTest.fail(result.getName());
+      extentTest.addScreenCaptureFromPath(screenshotLocation);
+           extentTest.fail(result.getThrowable());
+
+       } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
+           extentTest.skip("Test Case is skipped: " + result.getName()); // Ignore olanlar
+       }
 
         driver.quit();
 
