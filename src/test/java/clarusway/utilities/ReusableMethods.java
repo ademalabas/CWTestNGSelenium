@@ -17,7 +17,7 @@ public class ReusableMethods {
         String date =formatCurrentDate("yyyyMMddhhmmss");
        File source =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
-       String target =System.getProperty("user.dir")+"test-output\\Screenshot\\"+name+date+".png";
+       String target =System.getProperty("user.dir")+"\\test-output\\Screenshot\\"+name+date+".png";
        File targetFile =new File(target);
         FileUtils.copyFile(source, targetFile);
         return target;
