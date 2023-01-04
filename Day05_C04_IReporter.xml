@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Listener Test Suite" >
     <listeners>
-        <listener class-name="clarusway.tests.Day_05_HTMLReports.C02_ITestListener"></listener>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
     </listeners>
 
     <test name="Listener Tests" >
