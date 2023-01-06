@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ReusableMethods {
+
     public static String getScreenShot (WebDriver driver, String name) throws IOException {
         //screenshot dosya ismi icin suanli tarihi string olarak aliyoruz
         String date =formatCurrentDate("yyyyMMddhhmmss");
@@ -23,6 +24,7 @@ public class ReusableMethods {
         return target;
 
     }
+
 
     public static String formatCurrentDate(String pattern){
 

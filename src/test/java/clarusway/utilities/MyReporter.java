@@ -901,7 +901,6 @@ public class MyReporter implements IReporter {
 
     /**
      * Groups {@link MethodResult}s by class.
-     *
      */
     protected static class ClassResult {
         private final String className;

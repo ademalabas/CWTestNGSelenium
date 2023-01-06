@@ -19,7 +19,9 @@ public class C01_ExcelUtil extends BaseCROSSBrowserTest {
     @Test
     public void test(){
 
+
         String path = System.getProperty("user.dir") + "\\src\\test\\java\\clarusway\\resources\\testdata.xlsx";
+
 
         ExcelUtils eu = new ExcelUtils(path, 2);
 

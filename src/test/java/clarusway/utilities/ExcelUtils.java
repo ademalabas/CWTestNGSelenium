@@ -12,6 +12,7 @@ import java.util.Map;
 
 public class ExcelUtils {
 
+
     private Workbook workbook;
 
     private Sheet sheet;
@@ -45,8 +46,10 @@ public class ExcelUtils {
         return sheet.getRow(0).getLastCellNum();
     }
 
+
     // exceldeki verileri List<Map<String,String>> formatina cevirerek dondurur. Javada rahat calismamizi saglar
     public List<Map<String, String>> getDataList() {
+
 
         // getting all columns
         List<String> columns = getColumnsNames();
@@ -66,6 +69,7 @@ public class ExcelUtils {
         }
         return data;
     }
+
 
     // Istedigimiz hucredeki veriyi almamizi saglar
     public String getCellData(int rowNum, int colNum) {

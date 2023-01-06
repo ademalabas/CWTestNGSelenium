@@ -7,6 +7,12 @@ import org.openqa.selenium.WebElement;
 
 public class JSUtils {
 
+/*
+    public static void defineMyDriver(WebDriver MyDriver){
+        driver = MyDriver;
+    }
+    */
+
 public static  WebDriver driver;
     //This method will takes two parameter: WebElement, and WebDriver
     //When you pass the element, JS will click on that element
