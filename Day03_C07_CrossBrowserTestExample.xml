@@ -8,7 +8,6 @@
             <class name="clarusway.tests.Day_03.C07_CrossBrowserTestExample"></class>
         </classes>
 
-
     </test>
 
     <test name="Cross Browser Test - Firefox">
