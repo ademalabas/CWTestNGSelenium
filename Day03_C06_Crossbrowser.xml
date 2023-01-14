@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Cross Browser Test Suite">
 
+
     <test name="Cross Browser Test - Chrome">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
@@ -14,5 +15,7 @@
         <classes>
             <class name="clarusway.tests.Day_03.C06_CrossBrowser"></class>
         </classes>
+
+
     </test>
 </suite>
